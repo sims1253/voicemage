@@ -59,7 +59,7 @@ def main():
 
     parser.add_argument("-p", "--path", type=str,
                         help="path to file to transcribe")
-    parser.add_argument("-o", "--output", type=str,
+    parser.add_argument("-o", "--output", type=str, default="../../host/output.txt",
                         help="filename for output")
 
     args = parser.parse_args()
