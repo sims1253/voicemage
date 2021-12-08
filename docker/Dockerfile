@@ -41,3 +41,6 @@ RUN poetry run python model_setup.py
 ADD run.sh /
 RUN chmod +x /run.sh
 
+ENTRYPOINT ["/run.sh"]
+
+CMD ["2"]
